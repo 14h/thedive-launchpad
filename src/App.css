@@ -1,0 +1,226 @@
+.LaunchPad{
+  width: 100vw;
+  height: 100vh;
+  /* background: url("https://i.imgur.com/10wYMXp.png"); */
+  /* background: #000; */
+  background-position: center;
+  background-position:52.5% 50%;
+  /* padding-top: 100px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-content: center; */
+
+}
+.particles-wrapper canvas{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.particles-wrapper{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background: #000;
+  height: 100vh;
+  width: 100%;
+}
+h1{
+  color: #FFF;
+}
+
+
+
+/* NAVIGATION BAR */
+.NavigationBar{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 50px;
+  /* background: #333; */
+  z-index: 10;
+}
+
+#nav-logo{
+  height: 150%;
+  margin-top: 25px;
+  transition: all 0.3s linear;
+}
+.nav-link{
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 10px;
+  color: #FFF;
+  height: 25px;
+  background: #e7ff04;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width:1000px){
+  .nav-link{
+    font-size: 14px;
+  }
+}
+.nav-link:link{
+  text-decoration: none;
+  color: #FFF;
+}
+.nav-link:active{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-link:visited{
+  text-decoration: none;
+  color: #000;
+}
+.nav-link:hover{
+  text-decoration: none;
+  color: #FFF;
+  background: #2896d2;
+}
+#nav-left-side{
+  transition: all 0.2s;
+}
+#nav-right-side{
+  transition: all 0.2s;
+}
+
+
+
+/* SECTION */
+
+.section{
+  background: #FFFFFFBE;
+  color: #000;
+  padding: 50px;
+  margin: 100px;
+  border-radius: 5px;
+}
+.section:hover{
+  background: #FFFFFFBE;
+}
+.section-header{
+  color: #c7073a;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+
+}
+.section-body{
+  font-size: 23px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 35px;
+}
+
+
+
+
+/* SERVICES */
+.servicesContainer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line-services{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 600px;
+  transition: all linear 0.3s;
+}
+.service-box{
+  height: 160px;
+  width: 150px;
+  filter: drop-shadow(5px 5px 10px dodgerblue);
+  transition: all linear 0.3s;
+}
+a.service-box:link{
+  font-size: 25px;
+  font-weight: 900;
+  color: #010101;
+  text-decoration: none;
+}
+a.service-box:hover{
+  color: #010101;
+  text-decoration: none;
+}
+a.service-box:active{
+  color: #010101;
+  text-decoration: none;
+}
+a.service-box:visited{
+  color: #010101;
+  text-decoration: none;
+}
+.service-path{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e7ff04;
+  -webkit-clip-path: polygon(50% 0, 100% 27%, 100% 73%, 50% 100%, 50% 100%, 0 73%, 0 27%);
+  clip-path: polygon(50% 0, 100% 27%, 100% 73%, 50% 100%, 50% 100%, 0 73%, 0 27%);
+  transition: all linear 0.3s;
+  
+}
+.service-path:hover{
+  background: #e7ff04aa;
+}
+
+/* .first-line-services{
+  transform: translateY(20px);
+} */
+
+.first-left{
+  transform: translate(17px, 27px) scale(1.43);
+}
+.first-right{
+  transform: translate(-17px, 27px) scale(1.43);
+}
+.second-left{
+  transform: translate(-26px, 0px) scale(1.65);
+}
+.second-right{
+  transform: translate(26px, 0px) scale(1.65);
+}
+.third-left{
+  transform: translate(17px, -27px) scale(1.43);
+}
+.third-right{
+  transform: translate(-17px, -27px) scale(1.43);
+}
+
+.loaded .first-left{
+  transform: translateX(0px);
+}
+.loaded .first-right{
+  transform: translateX(0px);
+}
+.loaded .second-left{
+  transform: translateX(0px);
+}
+.loaded .second-right{
+  transform: translateX(0px);
+}
+.loaded .third-left{
+  transform: translateX(0px);
+}
+.loaded .third-right{
+  transform: translateX(0px);
+}
